@@ -18,7 +18,7 @@ defmodule MyAppWeb.GoodBLive do
       <%= live_patch "Patch", to: Routes.live_path(@socket, __MODULE__) %>
       <%= @random %>
       <p>
-        Clicking patch sends the following message back to the client (the list assigns are resent:)
+      Clicking patch sends the following message back to the client (only the random number has been updated:)
       </p>
       <pre>
         ["4","6","lv:phx-Fv9-uTRWqFO_hhoh","phx_reply",{"response":{"diff":{"0":{"0":{"0":{"2":"7748"}}}}},"status":"ok"}]
