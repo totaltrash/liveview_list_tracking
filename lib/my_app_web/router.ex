@@ -18,6 +18,8 @@ defmodule MyAppWeb.Router do
     pipe_through :browser
 
     get "/", PageController, :index
+    live "/good", GoodLive
+    live "/bad", BadLive
   end
 
   # Other scopes may use custom stacks.
