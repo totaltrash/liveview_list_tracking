@@ -20,9 +20,7 @@ defmodule MyAppWeb.GoodBLive do
       <p>
       Clicking patch sends the following message back to the client (only the random number has been updated:)
       </p>
-      <pre>
-        ["4","6","lv:phx-Fv9-uTRWqFO_hhoh","phx_reply",{"response":{"diff":{"0":{"0":{"0":{"2":"7748"}}}}},"status":"ok"}]
-      </pre>
+      <pre>["4","6","lv:phx-Fv9-uTRWqFO_hhoh","phx_reply",{"response":{"diff":{"0":{"0":{"0":{"2":"7748"}}}}},"status":"ok"}]</pre>
     </.wrapper>
     """
   end

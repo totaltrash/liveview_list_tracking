@@ -22,9 +22,7 @@ defmodule MyAppWeb.BadLive do
       <p>
         Clicking patch sends the following message back to the client (the list assigns are resent:)
       </p>
-      <pre>
-        ["4","6","lv:phx-Fv99jgLmaUEKdRlE","phx_reply",{"response":{"diff":{"0":{"0":{"0":{"0":{"0":{"d":[[{"0":"cat","s":0}],[{"0":"dog","s":0}],[{"0":"bird","s":0}]],"p":{"0":["\n    ","\n  "]}}},"2":"5538"}}}}},"status":"ok"}]
-      </pre>
+      <pre>["4","6","lv:phx-Fv99jgLmaUEKdRlE","phx_reply",{"response":{"diff":{"0":{"0":{"0":{"0":{"0":{"d":[[{"0":"cat","s":0}],[{"0":"dog","s":0}],[{"0":"bird","s":0}]],"p":{"0":["\n    ","\n  "]}}},"2":"5538"}}}}},"status":"ok"}]</pre>
     </.wrapper>
     """
   end
