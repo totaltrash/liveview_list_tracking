@@ -19,6 +19,7 @@ defmodule MyAppWeb.Router do
 
     get "/", PageController, :index
     live "/good", GoodLive
+    live "/good_b", GoodBLive
     live "/bad", BadLive
   end
 

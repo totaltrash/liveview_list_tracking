@@ -1,4 +1,4 @@
-defmodule MyAppWeb.BadLive do
+defmodule MyAppWeb.GoodBLive do
   use MyAppWeb, :live_view
 
   def mount(_params, _session, socket) do
@@ -12,18 +12,16 @@ defmodule MyAppWeb.BadLive do
 
   def render(assigns) do
     ~H"""
-    <h1>Example with wrapper and slotted component - bad</h1>
+    <h1>Example with wrapper - all good</h1>
     <.wrapper>
-      <.list pets={@pets} let={pet}>
-        <%= pet %>
-      </.list>
+      <.list pets={@pets} />
       <%= live_patch "Patch", to: Routes.live_path(@socket, __MODULE__) %>
       <%= @random %>
       <p>
         Clicking patch sends the following message back to the client (the list assigns are resent:)
       </p>
       <pre>
-        ["4","6","lv:phx-Fv99jgLmaUEKdRlE","phx_reply",{"response":{"diff":{"0":{"0":{"0":{"0":{"0":{"d":[[{"0":"cat","s":0}],[{"0":"dog","s":0}],[{"0":"bird","s":0}]],"p":{"0":["\n    ","\n  "]}}},"2":"5538"}}}}},"status":"ok"}]
+        ["4","6","lv:phx-Fv9-uTRWqFO_hhoh","phx_reply",{"response":{"diff":{"0":{"0":{"0":{"2":"7748"}}}}},"status":"ok"}]
       </pre>
     </.wrapper>
     """
@@ -33,7 +31,7 @@ defmodule MyAppWeb.BadLive do
     ~H"""
     <ul>
       <%= for pet <- @pets do %>
-        <li><%= render_slot(@inner_block, pet) %></li>
+        <li><%= pet %></li>
       <% end %>
     </ul>
     """

@@ -12,17 +12,18 @@ defmodule MyAppWeb.GoodLive do
 
   def render(assigns) do
     ~H"""
-      <.list pets={@pets} let={pet}>
-        <%= pet %>
-      </.list>
-      <%= live_patch "Patch", to: Routes.live_path(@socket, __MODULE__) %>
-      <%= @random %>
-      <p>
-        Clicking patch sends the following message back to the client (only the random number has been updated:)
-      </p>
-      <pre>
-        ["4","6","lv:phx-Fv99fQV-R6wxlCFC","phx_reply",{"response":{"diff":{"0":{"2":"5506"}}},"status":"ok"}]
-      </pre>
+    <h1>Example with slotted component - all good</h1>
+    <.list pets={@pets} let={pet}>
+      <%= pet %>
+    </.list>
+    <%= live_patch "Patch", to: Routes.live_path(@socket, __MODULE__) %>
+    <%= @random %>
+    <p>
+      Clicking patch sends the following message back to the client (only the random number has been updated:)
+    </p>
+    <pre>
+      ["4","6","lv:phx-Fv99fQV-R6wxlCFC","phx_reply",{"response":{"diff":{"0":{"2":"5506"}}},"status":"ok"}]
+    </pre>
     """
   end
 
